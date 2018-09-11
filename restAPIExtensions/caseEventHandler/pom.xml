@@ -15,7 +15,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<platform.setup.dir>${project.build.directory}/setup</platform.setup.dir>
 		<!-- WARNING for Windows users: keep forward slashes like below (instead of backslashes) -->
-		<target.db.path>D:/Pierrick/Documents/studios/BonitaStudioSubscription-7.7.0/workspace/default/h2_database</target.db.path>
+		<target.db.path>/home/bonita/bonita-continuous-delivery/BonitaSubscription-7.7.0-Tomcat-8.5.31/h2_database</target.db.path>
 	</properties>
 
 	<dependencies>
@@ -111,7 +111,7 @@
 							<overWriteIfNewer>true</overWriteIfNewer>
 							<overWriteReleases>true</overWriteReleases>
 							<overWriteSnapshots>true</overWriteSnapshots>
-							<outputDirectory>${project.build.dir}/../../../../tomcat/server/webapps/bonita/WEB-INF/lib</outputDirectory>
+							<outputDirectory>/home/bonita/bonita-continuous-delivery/BonitaSubscription-7.7.0-Tomcat-8.5.31/server/webapps/bonita/WEB-INF/lib</outputDirectory>
 						</configuration>
 					</execution>
 				</executions>
@@ -244,4 +244,11 @@
 			</build>
 		</profile>
 	</profiles>
+	 <repositories>
+    <repository>
+      <id>localRepo</id>
+      <name>your custom repo</name>
+      <url>http://repositories.rd.lan/maven/all</url>
+    </repository>
+</repositories>
 </project>
