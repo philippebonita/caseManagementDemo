@@ -1,0 +1,291 @@
+{
+  "designerVersion" : "1.7.25",
+  "previousDesignerVersion" : "1.5.7",
+  "id" : "5ede8643-6427-4c2c-bfec-53e0ba9aaecc",
+  "name" : "AppLayoutPageV75Langues3V1",
+  "lastUpdate" : 1525286541870,
+  "rows" : [ [ {
+    "type" : "container",
+    "dimension" : {
+      "xs" : 12,
+      "sm" : 12,
+      "md" : 12,
+      "lg" : 12
+    },
+    "propertyValues" : {
+      "cssClasses" : {
+        "type" : "constant",
+        "value" : "layout-header"
+      },
+      "hidden" : {
+        "type" : "constant",
+        "value" : false
+      },
+      "repeatedCollection" : {
+        "type" : "variable"
+      }
+    },
+    "reference" : "39ee85ce-6407-4a48-b62b-117b814bbfdb",
+    "id" : "pbContainer",
+    "rows" : [ [ {
+      "type" : "component",
+      "dimension" : {
+        "xs" : 12,
+        "sm" : 12,
+        "md" : 6,
+        "lg" : 6
+      },
+      "propertyValues" : {
+        "cssClasses" : {
+          "type" : "constant",
+          "value" : ""
+        },
+        "hidden" : {
+          "type" : "constant",
+          "value" : false
+        },
+        "srcType" : {
+          "type" : "constant",
+          "value" : "Asset"
+        },
+        "url" : {
+          "type" : "constant"
+        },
+        "assetName" : {
+          "type" : "constant",
+          "value" : "logo.png"
+        },
+        "alt" : {
+          "type" : "interpolation"
+        }
+      },
+      "reference" : "f8399f30-4595-4f23-89b2-9eaf7c02765e",
+      "id" : "pbImage"
+    }, {
+      "type" : "component",
+      "dimension" : {
+        "xs" : 12,
+        "sm" : 12,
+        "md" : 6,
+        "lg" : 6
+      },
+      "propertyValues" : {
+        "cssClasses" : {
+          "type" : "constant",
+          "value" : ""
+        },
+        "hidden" : {
+          "type" : "constant",
+          "value" : false
+        },
+        "value" : {
+          "type" : "constant",
+          "value" : "Logout"
+        },
+        "alignment" : {
+          "type" : "constant",
+          "value" : "right"
+        },
+        "buttonStyle" : {
+          "type" : "constant",
+          "value" : "danger"
+        }
+      },
+      "reference" : "e63eac61-1a39-4423-b647-8664ab0b069d",
+      "id" : "customSessionWidget"
+    } ], [ {
+      "type" : "component",
+      "dimension" : {
+        "xs" : 12,
+        "sm" : 12,
+        "md" : 12,
+        "lg" : 12
+      },
+      "propertyValues" : {
+        "cssClasses" : {
+          "type" : "constant",
+          "value" : ""
+        },
+        "hidden" : {
+          "type" : "constant",
+          "value" : false
+        },
+        "targetUrl" : {
+          "type" : "variable",
+          "value" : "targetedPageUrl"
+        },
+        "contextPath" : {
+          "type" : "constant",
+          "value" : "/bonita"
+        },
+        "sticky" : {
+          "type" : "constant",
+          "value" : false
+        },
+        "imgTitle" : {
+          "type" : "constant",
+          "value" : "Link to Bonita BPM Portal"
+        },
+        "targetBlank" : {
+          "type" : "constant",
+          "value" : true
+        },
+        "srcType" : {
+          "type" : "constant",
+          "value" : "Asset"
+        },
+        "assetNameBonita" : {
+          "type" : "constant",
+          "value" : "portal.png"
+        },
+        "url" : {
+          "type" : "constant"
+        },
+        "assetNameCalendarGoogle" : {
+          "type" : "constant",
+          "value" : "calendar.png"
+        },
+        "assetNameSalesForce" : {
+          "type" : "constant",
+          "value" : "sf.png"
+        }
+      },
+      "reference" : "43a759f6-2fbd-49e3-9f96-760ad4e0b4ef",
+      "id" : "customLivingApplicationMenuV2"
+    } ] ]
+  } ], [ {
+    "type" : "container",
+    "dimension" : {
+      "xs" : 12,
+      "sm" : 12,
+      "md" : 12,
+      "lg" : 12
+    },
+    "propertyValues" : {
+      "cssClasses" : {
+        "type" : "constant",
+        "value" : "layout-content"
+      },
+      "hidden" : {
+        "type" : "constant",
+        "value" : false
+      },
+      "repeatedCollection" : {
+        "type" : "variable"
+      }
+    },
+    "reference" : "8ef160dd-2941-4b03-8dfc-d50960d8be57",
+    "id" : "pbContainer",
+    "rows" : [ [ {
+      "type" : "component",
+      "dimension" : {
+        "xs" : 12,
+        "sm" : 12,
+        "md" : 12,
+        "lg" : 12
+      },
+      "propertyValues" : {
+        "cssClasses" : {
+          "type" : "constant",
+          "value" : ""
+        },
+        "hidden" : {
+          "type" : "constant",
+          "value" : false
+        },
+        "src" : {
+          "type" : "expression",
+          "value" : "targetedPageUrl"
+        },
+        "resizeToContent" : {
+          "type" : "constant",
+          "value" : false
+        }
+      },
+      "reference" : "f4f05bd2-88bc-4abd-988f-6b8fb95db201",
+      "id" : "customLivingApplicationIFrameV2"
+    } ] ]
+  } ], [ {
+    "type" : "container",
+    "dimension" : {
+      "xs" : 12,
+      "sm" : 12,
+      "md" : 12,
+      "lg" : 12
+    },
+    "propertyValues" : {
+      "cssClasses" : {
+        "type" : "constant",
+        "value" : "layout-footer"
+      },
+      "hidden" : {
+        "type" : "constant",
+        "value" : false
+      },
+      "repeatedCollection" : {
+        "type" : "variable"
+      }
+    },
+    "reference" : "dec5f1ce-20f0-481e-aa57-e1c01e345ad1",
+    "id" : "pbContainer",
+    "rows" : [ [ ] ]
+  } ] ],
+  "assets" : [ {
+    "id" : "bc41a1d6-83af-449c-9e80-7f3aed7e90b5",
+    "name" : "layout.js",
+    "type" : "js",
+    "order" : 4,
+    "external" : false
+  }, {
+    "id" : "80d9a19f-4d3f-4287-a66c-45de76d2440e",
+    "name" : "portal.png",
+    "type" : "img",
+    "order" : 2,
+    "external" : false
+  }, {
+    "id" : "c3d731a2-2483-4904-ab94-85e5d500721c",
+    "name" : "sf.png",
+    "type" : "img",
+    "order" : 6,
+    "external" : false
+  }, {
+    "id" : "0de7b431-64c6-404c-ab56-d0603b37af74",
+    "name" : "calendar.png",
+    "type" : "img",
+    "order" : 7,
+    "external" : false
+  }, {
+    "id" : "aaf8408a-1534-4ab8-a0c9-3c1fd693a8c7",
+    "name" : "localization.json",
+    "type" : "json",
+    "order" : 5,
+    "external" : false
+  }, {
+    "id" : "135fce24-9bad-4eda-bd89-2ff81a503471",
+    "name" : "logo.png",
+    "type" : "img",
+    "order" : 1,
+    "external" : false
+  }, {
+    "id" : "6b1c711c-99b8-4186-be9a-61996a2ca15e",
+    "name" : "style.css",
+    "type" : "css",
+    "order" : 8,
+    "external" : false
+  }, {
+    "id" : "6f30b307-92a2-4bbf-ad43-182bcf59ec40",
+    "name" : "layout.css",
+    "type" : "css",
+    "order" : 9,
+    "external" : false
+  } ],
+  "inactiveAssets" : [ ],
+  "data" : {
+    "targetedPageUrl" : {
+      "type" : "constant",
+      "exposed" : false
+    }
+  },
+  "uuid" : "5ede8643-6427-4c2c-bfec-53e0ba9aaecc",
+  "type" : "layout"
+}
