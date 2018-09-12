@@ -247,7 +247,7 @@
 	 <repositories>
     <repository>
       <id>localRepo</id>
-      <name>your custom repo</name>
+      <name>repository required to deploy eventhandler with platform setup sp</name>
       <url>http://repositories.rd.lan/maven/all</url>
     </repository>
 </repositories>

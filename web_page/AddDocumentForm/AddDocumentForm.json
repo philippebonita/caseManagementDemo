@@ -2,7 +2,7 @@
   "designerVersion" : "1.7.29",
   "id" : "AddDocumentForm",
   "name" : "AddDocumentForm",
-  "lastUpdate" : 1524751362524,
+  "lastUpdate" : 1536745091572,
   "rows" : [ [ {
     "type" : "container",
     "dimension" : {
@@ -158,7 +158,7 @@
           },
           "text" : {
             "type" : "interpolation",
-            "value" : "Documents"
+            "value" : "Document"
           },
           "alignment" : {
             "type" : "constant",
@@ -171,6 +171,10 @@
           "dimension" : {
             "type" : "constant",
             "value" : 12
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
           }
         },
         "reference" : "831a05fa-a8cf-48fa-8dcd-342c448f7b14",
