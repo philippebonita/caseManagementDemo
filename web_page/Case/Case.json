@@ -3,7 +3,7 @@
   "previousDesignerVersion" : "1.7.11",
   "id" : "Case",
   "name" : "Case",
-  "lastUpdate" : 1536679601184,
+  "lastUpdate" : 1536760532953,
   "rows" : [ [ {
     "type" : "container",
     "dimension" : {
@@ -91,7 +91,7 @@
           },
           "label" : {
             "type" : "interpolation",
-            "value" : "Name"
+            "value" : "Name of my customer"
           },
           "labelPosition" : {
             "type" : "constant",
