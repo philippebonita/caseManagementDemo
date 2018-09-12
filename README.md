@@ -19,7 +19,7 @@ for 7.7.0 it must be get from _repositories.rd.lan_ server (added at the end of 
 * change the property `<target.db.path>` value to link to the h2 database 
 * change the property `<outputDirectory>` of execution `<id>copy-handler-to-studio-tomcat</id>` to point to the tomcat WEB-INF
 
-## deploy this demo with BCD
+## Deploy with BCD
 
 First install BCD with 7.7.0 dependencies.
 You must have a blank Bonita Runtime ready to be used (you should install the usual tomcat bundle)
@@ -41,7 +41,7 @@ In BCD controller:
  
  ## Demo 
 
-the fraud app is available on http://<target server>/bonita/apps/cases/home/
+the fraud app is available on `http://<target server>/bonita/apps/cases/home/`
 * in account you should enter an account starting with '1234'
 * it will list all transactions of the customer
 * then enter any ID (identifier of the fraud Case) and Type (type of fraud)
