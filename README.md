@@ -27,15 +27,15 @@ You must have a blank Bonita Runtime ready to be used (you should install the us
 In BCD controller:
 * `cd bonita-continuous-delivery`
 * clone this git repo : `git clone <this repo link>`
-* modify the scenario build_and_deploy to set the correct bonita version and give the target server local url :
-** `cp scenarios/build_and_deploy.ym.EXAMPLE scenarios/build_and_deploy.yml`
-** `vi scenarios/build_and_deploy.yml`
-** set the _bonita_version_ to 7.7.0 and save the file
-** define the url to the local Bonita Runtime :
-*** `vi ansible/inventory/static-inventory/livingapp-build-deploy-static-inventory`
-*** set the _bonita_url_ to the local Bonita runtime (ex bonita_url=http://192.168.1.100:8080/bonita)
+* modify the scenario build_and_deploy to set the correct bonita version and give the target server local url
+  * `cp scenarios/build_and_deploy.ym.EXAMPLE scenarios/build_and_deploy.yml`
+  * `vi scenarios/build_and_deploy.yml`
+  * set the _bonita_version_ to 7.7.0 and save the file
+  * define the url to the local Bonita Runtime :
+    * `vi ansible/inventory/static-inventory/livingapp-build-deploy-static-inventory`
+    * set the _bonita_url_ to the local Bonita runtime (ex bonita_url=http://192.168.1.100:8080/bonita)
 * build the repo `bcd -y -s scenarios/build_and_deploy.yml livingapp build -e Demo -p caseManagementDemo/`
-** it will build all artifacts and deploy the event handler on the target server
+  * it will build all artifacts and deploy the event handler on the target server
 * deploy the bcd -y -s scenarios/build_and_deploy.yml livingapp deploy -p caseManagementDemo/target/caseManagementDemo
-** it will deploy all artifacts for case Management demo
+  * it will deploy all artifacts for case Management demo
 
