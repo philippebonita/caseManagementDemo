@@ -26,7 +26,7 @@ You must have a blank Bonita Runtime ready to be used (you should install the us
 
 In BCD controller:
 * `cd bonita-continuous-delivery`
-* clone this git repo : `git clone <this repo link>`
+* clone this git repo : `git clone <this repo name>`
 * modify the scenario build_and_deploy to set the correct bonita version and give the target server local url
   * `cp scenarios/build_and_deploy.ym.EXAMPLE scenarios/build_and_deploy.yml`
   * `vi scenarios/build_and_deploy.yml`
@@ -34,8 +34,19 @@ In BCD controller:
   * define the url to the local Bonita Runtime :
     * `vi ansible/inventory/static-inventory/livingapp-build-deploy-static-inventory`
     * set the _bonita_url_ to the local Bonita runtime (ex bonita_url=http://192.168.1.100:8080/bonita)
-* build the repo `bcd -y -s scenarios/build_and_deploy.yml livingapp build -e Demo -p caseManagementDemo/`
+* build the repo `bcd -y -s scenarios/build_and_deploy.yml livingapp build -e Demo -p <this repo name>/`
   * it will build all artifacts and deploy the event handler on the target server
-* deploy the bcd -y -s scenarios/build_and_deploy.yml livingapp deploy -p caseManagementDemo/target/caseManagementDemo
-  * it will deploy all artifacts for case Management demo
+* deploy the repo `bcd -y -s scenarios/build_and_deploy.yml livingapp deploy -p <this repo name>/target/<this repo name>`
+  * it will deploy all artifacts for Case Management demo
+ 
+ ## Demo 
+
+the fraud app is available on http://<target server>/bonita/apps/cases/home/
+* in account you should enter an account starting with '1234'
+* it will list all transactions of the customer
+* then enter any ID (identifier of the fraud Case) and Type (type of fraud)
+* a new case appear on the Case list and can be opened to be managed
+ 
+ 
+
 
