@@ -16,8 +16,8 @@ for 7.7.0 it must be get from _repositories.rd.lan_ server (added at the end of 
 #### configuration for event handler auto-deployment at build
 
 * edit the pom.xml of RestAPIExtension _caseEventHandler_
-* change the property <target.db.path> value to link to the h2 database 
-* change the property <outputDirectory> of _copy-handler-to-studio-tomcat_ to point to the tomcat WEB-INF
+* change the property `<target.db.path>` value to link to the h2 database 
+* change the property `<outputDirectory>` of execution `<id>copy-handler-to-studio-tomcat</id>` to point to the tomcat WEB-INF
 
 ## deploy this demo with BCD
 
