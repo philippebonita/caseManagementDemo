@@ -1,10 +1,10 @@
 # caseManagementDemo
 
-This repository provides all elements to build and deploy the Case Management demo (_Online shopping fraud use-case_)
+This repository provides all elements to build and deploy the Case Management demo (_Online shopping fraud use-case_) using Bonita 7.7.0 and BCD 2.0.x.
 
-it is compatible with Bonita **7.7.0** and BCD **2.0.x**. 
+It is compatible with Bonita **7.7.0** and BCD **2.0.x**. 
 
-this readme explains how to configure and deploy this demo with BCD on a *local* server (not on AWS for the moment).
+This readme explains how to configure and deploy this demo with BCD on a **local** server (not on AWS).
 
 ## eventHandler
 This implementation requires an event handler described in the RestAPIExtension _caseEventHandler_. 
