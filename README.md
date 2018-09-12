@@ -2,7 +2,7 @@
 
 This repository provides all elements to build and deploy the Case Management demo (_Online shopping fraud use-case_)
 
-it is compatible with Bonita *7.7.0* and BCD *2.0.x*. 
+it is compatible with Bonita **7.7.0** and BCD **2.0.x**. 
 
 this readme explains how to configure and deploy this demo with BCD on a *local* server (not on AWS for the moment).
 
@@ -10,8 +10,8 @@ this readme explains how to configure and deploy this demo with BCD on a *local*
 This implementation requires an event handler described in the RestAPIExtension _caseEventHandler_. 
 
 This event handler is automatically deployed on the target platform when launching the maven build command. 
-it requires specific dependencies which are not available in the maven sp repo currently (to be integrated into the maven sp repo from 7.8). 
-for 7.7.0 it must be get from _repositories.rd.lan_ server (added at the end of the end of the pom.xml) : *you must ensure to have access to the machine repositories.rd.lan*
+it requires specific dependencies which are not available in the maven sp repo 7.7.0 (should be integrated into the maven sp repo from 7.8). 
+for 7.7.0 it must be get from _repositories.rd.lan_ server (added at the end of the end of the pom.xml) : **you must ensure to have access to the machine _repositories.rd.lan_**
 
 #### configuration for event handler auto-deployment at build
 
