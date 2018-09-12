@@ -33,7 +33,7 @@ In BCD controller:
   * set the _bonita_version_ to 7.7.0 and save the file
   * define the url to the local Bonita Runtime :
     * `vi ansible/inventory/static-inventory/livingapp-build-deploy-static-inventory`
-    * set the _bonita_url_ to the local Bonita runtime (ex bonita_url=http://192.168.1.100:8080/bonita)
+    * set the _bonita_url_ to the local Bonita runtime (ex `bonita_url=http://192.168.1.100:8080/bonita)
 * build the repo `bcd -y -s scenarios/build_and_deploy.yml livingapp build -e Demo -p <this repo name>/`
   * it will build all artifacts and deploy the event handler on the target server
 * deploy the repo `bcd -y -s scenarios/build_and_deploy.yml livingapp deploy -p <this repo name>/target/<this repo name>`
